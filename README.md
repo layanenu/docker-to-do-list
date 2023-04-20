@@ -1,13 +1,61 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<strong>Docker Todo List :pencil:</strong>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+<strong>:wavy_dash: Sobre</strong>
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Nesse projeto foi dado uma aplicação full-stack, um aplicativo de tarefas, que precisava ser conteinerizado para funcionar.
+
+O objetivo do projeto foi conteinerizar aplicações, criar uma conexão entre elas e orquestrar seu funcionamento.
+
+<details>
+  <summary><strong> Stacks </strong></summary><br />
+  * Bash
+  * Docker
+  * React JS
+  * Node JS
+</details>
+
+<details>
+  <summary><strong> :whale: Rodando com o Docker</strong></summary><br />
+
+  Clone o repositório:
+  ```bash
+  git clone git@github.com:layanenu/docker-to-do-list.git
+  ```
+
+  Entre no diretório docker-to-do-list:
+  ```bash
+  cd docker-todo-list
+  ```
+
+  Instale as dependências:
+  ```bash
+  npm install
+  ```
+
+  Entre no diretório docker:
+  ```bash
+  cd docker
+  ```
+
+  Faça o build das imagens de back-end, front-end e testes
+  ```bash
+  docker image build -t todobackend ./todo-app/back-end
+  docker image build -t todofrontend ./todo-app/front-end
+  docker image build -t todotests ./todo-app/tests
+  ```
+
+  Suba e orquestre os containers
+  ```bash
+  docker-compose up -d
+  ```
+
+  Para rodar os teste de funcionamento da aplicação
+  ```bash
+  docker attach docker-todotests-1
+  ```
+
+  Para executar a aplicação acesse o endereço abaixo no browser
+  ```bash
+  http://localhost:3000
+  ```
+ </details>
