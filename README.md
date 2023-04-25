@@ -14,6 +14,11 @@ O objetivo do projeto foi conteinerizar aplicações, criar uma conexão entre e
   * Node JS
 </details>
 
+<strong>:wavy_dash: Layout</strong>
+
+![gif](https://user-images.githubusercontent.com/99842422/234355788-3dd30ea9-240b-408c-a96b-533bb7ca99a6.gif)
+
+
 <details>
   <summary><strong> :whale: Rodando com o Docker</strong></summary><br />
 
